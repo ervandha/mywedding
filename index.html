@@ -54,6 +54,27 @@
         </div>
     </nav>
     <!-- Navbar End -->
+    
+    <div id="overlay">
+		<div class="content">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box fadeInUp animated-fast">
+						<img src="images/half%20circle%20flower-500.png" alt="" class="couple-main">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-8 col-md-offset-2 text-center fh5co-heading animate-box">
+						<h1>Rehan & Maulidan</h1>
+						<p style="margin-bottom: 0">Kepada Bapak/Ibu/Saudara/i</p>
+						<p>Kami Mengundang Anda Untuk Hadir Di Acara Pernikahan Kami.</p>
+
+						<button class="btn btn-primary" id="open-invitation">Buka Undangan</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 pb-5" id="home">
@@ -530,6 +551,16 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    $('#open-invitation').click(function (){
+		$('#overlay').addClass('hide-overlay');
+		playAudio1();
+		/*yang bagian floating button ada animasinya tapi karena ketutup dulu sama overlay jadinya gak nampak*/
+		/*pengen pas di klik buka undangan baru jalan animasinya*/
+		/*var c = document.getElementsByClassName('right-sidebar');
+		for (var i = 0; i < c.length; i++) {
+			c[i].classList.add('animate');
+		}*/
+	});
 </body>
 
 </html>
