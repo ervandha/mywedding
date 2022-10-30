@@ -115,3 +115,14 @@
     
 })(jQuery);
 
+	$('#open-invitation').click(function (){
+		$('#overlay').addClass('hide-overlay');
+		playAudio1();
+		/*yang bagian floating button ada animasinya tapi karena ketutup dulu sama overlay jadinya gak nampak*/
+		/*pengen pas di klik buka undangan baru jalan animasinya*/
+		/*var c = document.getElementsByClassName('right-sidebar');
+		for (var i = 0; i < c.length; i++) {
+			c[i].classList.add('animate');
+		}*/
+	});
+
